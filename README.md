@@ -7,8 +7,7 @@
 
 #### 扫码领取源码
 
-
-<img src="./weixin.png" alt="微信：Witt202301" style="width:120px">
+![输入图片说明](weixin.png)
 
 **摘** **要**
 
