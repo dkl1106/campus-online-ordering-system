@@ -83,14 +83,13 @@ Vue.js 自身不是一个全能框架——它只聚焦于视图层。因此它�
 
 用户用例图如下所示。
 
-![desc](https://img-blog.csdnimg.cn/img_convert/872d11eabc990a145a3b310a62b44edf.png)
+![输入图片说明](1.png)
 
       图3-1 用户用例图
 
 管理员用例图如下所示。
+![输入图片说明](2.png)
 
-
-![desc](https://img-blog.csdnimg.cn/img_convert/b50a2c2da83fb66b76844f2970dde540.png)
        图3-2 管理员用例图
 
 1.  1.  1.  **前台用户功能**
@@ -154,16 +153,14 @@ Vue.js 自身不是一个全能框架——它只聚焦于视图层。因此它�
 
 系统顶层数据流图如下图所示。
 
-![desc](https://img-blog.csdnimg.cn/img_convert/ea8294e52e8f2799533ecc10eaef8ecb.png)
-
+![输入图片说明](3.png)
 图3-2 顶层数据流图
 
 要判断用户是是什么身份，是根据登录的数据来判断后，跳转到对应的功能界面。在系统的内部用户就可以对数据进行操作，数据库中心就可以接收到系统传输的有效数据流来对数据sql语句进行对应操作。
 
 系统底层数据流图如下图所示。
 
-![desc](https://img-blog.csdnimg.cn/img_convert/6a8458f5b1c47967bf8b06c94229ac9c.png)
-
+![输入图片说明](4.png)
 图3-3 底层数据流图
 
 系统可以分为前台和后台两部分，每一种操作后系统都返回操作结果。前台和后台的数据连接主要通过数据库，既分别对数据库做不同的操作。
@@ -176,8 +173,7 @@ Vue.js 自身不是一个全能框架——它只聚焦于视图层。因此它�
 系统架构如下图所示。
 
 
-![desc](https://img-blog.csdnimg.cn/img_convert/6a8458f5b1c47967bf8b06c94229ac9c.png)
-
+![输入图片说明](5.png)
 图4-1 系统架构
 
 1.  1.  **系统总体设计**
@@ -189,8 +185,7 @@ Vue.js 自身不是一个全能框架——它只聚焦于视图层。因此它�
 综上所述，系统功能结构图如下图所示。
 
 
-![desc](https://img-blog.csdnimg.cn/img_convert/c1a537513da759c6f401aa6fec4870a8.png)
-
+![输入图片说明](6.png)
 图4-2 系统功能结构图
 
 1.  1.  **系统功能设计**
@@ -223,9 +218,9 @@ Vue.js 自身不是一个全能框架——它只聚焦于视图层。因此它�
 系统ER图如下图所示。
 
 
-![desc](https://img-blog.csdnimg.cn/img_convert/1d334369bd85d940406ffc9cdc797b9c.png)
-
+![输入图片说明](7.png)
 图4-3 系统ER图
+
 
 1.  1.  1.  数据库表设计
 
@@ -280,14 +275,12 @@ jdbc.password=123
 
 用户注册流程图如下图所示。
 
-![desc](https://img-blog.csdnimg.cn/img_convert/6ef408297b2c99a3ac4362532d27ab48.png)
-
+![输入图片说明](8.png)
 图5-1用户注册流程图
 
 用户注册界面如下图所示。
 
-![desc](https://img-blog.csdnimg.cn/img_convert/dee1ddb0a65c3210f3fb9456a120abe8.png)
-
+![输入图片说明](9.png)
 图5-2用户注册界面
 
 用户注册的关键代码如下。
@@ -393,14 +386,11 @@ jdbc.password=123
 主要由两部分组成，登录前的登录界面以及登录后的用户功能界面。登录界面，要求用户输入用户名和密码，当用户名和密码其中一个输入为空时，给出提示“用户名，密码不能为空”。获取用户名和密码后到数据库中查找，如果用户名存在，以及对应的密码正确，则登录成功，否则登录失败。登录失败后给出提示，并把焦点停在文本框中。登录成功后将该次会话的全局变量username设置为用户名。登录成功后进入会员的功能模块，主要有会员基本信息修改，已经发布菜品信息管理，发布信息，和退出功能。退出功能是清除全局变量username的值，并跳回到首页。
 
 登录流程图如下图所示。
-![desc](https://img-blog.csdnimg.cn/img_convert/6ef408297b2c99a3ac4362532d27ab48.png)
-
+![输入图片说明](10.png)
 图5-3登录流程图
 
 用户登录界面如下图所示。
-
-![desc](https://img-blog.csdnimg.cn/img_convert/dee1ddb0a65c3210f3fb9456a120abe8.png)
-
+![输入图片说明](11.png)
 图5-4用户登录界面
 
 用户登录的关键代码如下。
@@ -619,12 +609,11 @@ jdbc.password=123
 
 轮播图展示界面如下图所示。
 
-![desc](https://img-blog.csdnimg.cn/img_convert/c0bdd4550bf96f6cd62c288225593d65.png)
+
 
 图5-5轮播图展示界面
 
 轮播图管理界面如下图所示。
-![desc](https://img-blog.csdnimg.cn/img_convert/47f72120f7822563bd4dc777a8355c63.png)
 
 图5-6轮播图管理界面
 
@@ -648,14 +637,12 @@ jdbc.password=123
 
 菜品分类流程图如下图所示。
 
-![desc](https://img-blog.csdnimg.cn/img_convert/03d1c2fc39ffd7f2a36f31ca2be9edce.png)
-
+![输入图片说明](19.png)
 图5-7菜品分类流程图
 
 菜品分类界面如下图所示。
 
-![desc](https://img-blog.csdnimg.cn/img_convert/7c400a724ab06ce6dbadf2f72f446f2c.png)
-
+![输入图片说明](20.png)
 图5-8菜品分类界面
 
 菜品分类关键代码如下。
@@ -770,14 +757,13 @@ jdbc.password=123
 
 资讯列表流程图如下图所示。
 
-![desc](https://img-blog.csdnimg.cn/img_convert/cf07e482ba548a5cae5abb1a9b574ce8.png)
+![输入图片说明](21.png)
 
 图5-9资讯列表流程图
 
 资讯列表界面如下图所示。
 
-![desc](https://img-blog.csdnimg.cn/img_convert/8a39ba53cf9d64772e55a98abf7edd0a.png)
-
+![输入图片说明](22.png)
 
 图5-10资讯列表界面
 
